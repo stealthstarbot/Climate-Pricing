@@ -4,8 +4,7 @@
 library(haven)
 library(dplyr)
 library(ggplot2)
-
-# Load dataset
+setwd("C:/Users/Steal/OneDrive/Documents/Climate Pricing/Datasets")
 df <- read_dta("panel_final.dta")
 
 # Match exact sample restrictions from Stata do-file
@@ -26,15 +25,16 @@ df <- df %>%
 p <- ggplot(df, aes(x = log_carbon, y = log_co2)) +
   
   geom_point(
-    alpha = 0.20,
-    size = 1.2,
-    color = "darkcyan"
+    alpha = 0.45,
+    size = 1.3,
+    color = "#1F77B4"
   ) +
   
   geom_smooth(
     method = "lm",
     se = FALSE,
-    linewidth = 1
+    linewidth = 1,
+    color = "red"
   ) +
   
   labs(
