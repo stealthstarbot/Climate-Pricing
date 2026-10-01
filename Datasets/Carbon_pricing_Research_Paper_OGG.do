@@ -221,7 +221,7 @@ xtdescribe
 
 count
 
-* ---- Descriptive statistics table (Table 1 in your paper) ----
+* ---- Descriptive statistics table (Table 1 in my paper) ----
 summarize co2_per_capita carbon_price gdp_per_capita energy_per_gdp
 
 * For a formatted table, install estout first: ssc install estout
